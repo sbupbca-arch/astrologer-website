@@ -1,0 +1,678 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Joshi Madam - Premium Astrology & Spiritual Guidance</title>
+    <meta name="description" content="Discover clarity, guidance, and a better path forward with personalized astrology consultations by Joshi Madam.">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Noto+Serif+Devanagari:wght@400;600;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body id="home" data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="100">
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg fixed-top py-3">
+        <div class="container">
+            <a class="navbar-brand" href="#home">
+                <i class="fa-solid fa-dharmachakra"></i> <span data-i18n="brand.name">Joshi Madam</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item"><a class="nav-link active" href="#home" data-i18n="nav.home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about" data-i18n="nav.about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#services" data-i18n="nav.services">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#why-us" data-i18n="nav.whyus">Why Choose Us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#testimonials" data-i18n="nav.testimonials">Testimonials</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#faq" data-i18n="nav.faq">FAQ</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact" data-i18n="nav.contact">Contact</a></li>
+                </ul>
+                <div class="d-flex align-items-center gap-3 mt-3 mt-lg-0">
+                    <select class="lang-selector" id="languageSelector" aria-label="Select Language">
+                        <option value="en" selected>English</option>
+                        <option value="mr">मराठी (Marathi)</option>
+                        <option value="hi">हिंदी (Hindi)</option>
+                    </select>
+                    <a href="#contact" class="btn btn-primary-custom d-none d-lg-block" data-i18n="nav.book">Book Consultation</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero-section" style="background-image: url('images/hero_bg.jpg');">
+        <div class="hero-overlay"></div>
+        <div class="container hero-content">
+            <span class="hero-badge" data-i18n="hero.badge">Trusted Astrology & Spiritual Guidance</span>
+            <h1 class="hero-title" data-i18n="hero.title">Discover Clarity, Guidance<br>& a Better Path Forward</h1>
+            <p class="hero-subtitle" data-i18n="hero.subtitle">Experience traditional astrological wisdom combined with personalized, confidential consultation to overcome life's challenges and unlock your true potential.</p>
+            <div class="d-flex justify-content-center gap-3 flex-wrap">
+                <a href="#contact" class="btn btn-accent-custom" data-i18n="hero.cta1">Book a Consultation</a>
+                <a href="#services" class="btn btn-outline-custom" style="color: white; border-color: white;" data-i18n="hero.cta2">Explore Services</a>
+            </div>
+            <div class="trust-indicator mt-4">
+                <span><i class="fa-solid fa-shield-halved"></i> <span data-i18n="hero.trust1">Personal Guidance</span></span> &bull; 
+                <span><i class="fa-solid fa-lock"></i> <span data-i18n="hero.trust2">Confidential Consultation</span></span> &bull; 
+                <span><i class="fa-solid fa-star"></i> <span data-i18n="hero.trust3">Experienced Astrologer</span></span>
+            </div>
+        </div>
+    </header>
+
+    <!-- Trust / Quick Stats Section -->
+    <section class="stats-section container">
+        <div class="row g-0 justify-content-center">
+            <div class="col-6 col-md-3 stat-item">
+                <div class="stat-number">15+</div>
+                <div class="stat-label" data-i18n="stats.exp">Years Experience</div>
+            </div>
+            <div class="col-6 col-md-3 stat-item border-start border-light-subtle">
+                <div class="stat-number">5000+</div>
+                <div class="stat-label" data-i18n="stats.consult">Consultations</div>
+            </div>
+            <div class="col-6 col-md-3 stat-item border-start border-light-subtle">
+                <div class="stat-number">10+</div>
+                <div class="stat-label" data-i18n="stats.serv">Astrology Services</div>
+            </div>
+            <div class="col-6 col-md-3 stat-item border-start border-light-subtle">
+                <div class="stat-number">100%</div>
+                <div class="stat-label" data-i18n="stats.conf">Confidential</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section section-padding">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-5 mb-5 mb-lg-0">
+                    <div class="about-image-wrapper">
+                        <img src="images/astrologer.jpg" alt="Astrologer Joshi Madam" class="img-fluid about-image">
+                    </div>
+                </div>
+                <div class="col-lg-7 ps-lg-5">
+                    <span class="section-label" data-i18n="about.label">About The Astrologer</span>
+                    <h2 class="section-title" data-i18n="about.title">Guidance Rooted in Experience, Tradition & Understanding</h2>
+                    <p class="lead mb-4" data-i18n="about.p1">Welcome. I am Joshi Madam, dedicated to providing insightful astrological guidance to help you navigate life's complexities.</p>
+                    <p class="mb-4" data-i18n="about.p2">With over 15 years of deep study and practice in traditional Indian astrology, my approach combines ancient wisdom with a modern understanding of today's challenges. Every individual's birth chart is a unique cosmic blueprint, and my goal is to help you decode it to find clarity in your career, relationships, and personal growth.</p>
+                    <p class="mb-4" data-i18n="about.p3">All consultations are strictly confidential, offering you a safe space to discuss your deepest concerns and discover a clear path forward.</p>
+                    <div class="signature-font mb-4" data-i18n="brand.name">Joshi Madam</div>
+                    <a href="#services" class="btn btn-primary-custom" data-i18n="about.cta">Know More About My Services</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services-section section-padding">
+        <div class="container">
+            <div class="text-center mb-5">
+                <span class="section-label" data-i18n="services.label">Astrology Services</span>
+                <h2 class="section-title text-center" data-i18n="services.title">Personalized guidance for life's important decisions.</h2>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-4">
+                    <div class="service-card text-center">
+                        <i class="fa-solid fa-book-open service-icon"></i>
+                        <h3 class="service-title" data-i18n="srv.1.t">Horoscope Reading</h3>
+                        <p class="text-muted" data-i18n="srv.1.d">Detailed analysis of your birth chart to understand planetary influences on your life path, strengths, and challenges.</p>
+                        <a href="#contact" class="text-accent fw-bold"><span data-i18n="srv.btn">Learn More</span> <i class="fa-solid fa-arrow-right ms-1"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="service-card text-center">
+                        <i class="fa-solid fa-om service-icon"></i>
+                        <h3 class="service-title" data-i18n="srv.2.t">Kundli Analysis</h3>
+                        <p class="text-muted" data-i18n="srv.2.d">Comprehensive Kundli generation and interpretation for deep insights into your personality, destiny, and doshas.</p>
+                        <a href="#contact" class="text-accent fw-bold"><span data-i18n="srv.btn">Learn More</span> <i class="fa-solid fa-arrow-right ms-1"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="service-card text-center">
+                        <i class="fa-solid fa-rings-wedding service-icon"></i>
+                        <h3 class="service-title" data-i18n="srv.3.t">Marriage & Compatibility</h3>
+                        <p class="text-muted" data-i18n="srv.3.d">Gun Milan and relationship compatibility analysis to ensure harmony and long-lasting bonds in partnerships.</p>
+                        <a href="#contact" class="text-accent fw-bold"><span data-i18n="srv.btn">Learn More</span> <i class="fa-solid fa-arrow-right ms-1"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="service-card text-center">
+                        <i class="fa-solid fa-briefcase service-icon"></i>
+                        <h3 class="service-title" data-i18n="srv.4.t">Career & Business Guidance</h3>
+                        <p class="text-muted" data-i18n="srv.4.d">Astrological insights to choose the right career path, overcome professional hurdles, and achieve financial stability.</p>
+                        <a href="#contact" class="text-accent fw-bold"><span data-i18n="srv.btn">Learn More</span> <i class="fa-solid fa-arrow-right ms-1"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="service-card text-center">
+                        <i class="fa-solid fa-heart service-icon"></i>
+                        <h3 class="service-title" data-i18n="srv.5.t">Love & Relationships</h3>
+                        <p class="text-muted" data-i18n="srv.5.d">Guidance for relationship issues, understanding partner dynamics, and finding peace in personal connections.</p>
+                        <a href="#contact" class="text-accent fw-bold"><span data-i18n="srv.btn">Learn More</span> <i class="fa-solid fa-arrow-right ms-1"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="service-card text-center">
+                        <i class="fa-solid fa-house-chimney service-icon"></i>
+                        <h3 class="service-title" data-i18n="srv.6.t">Vastu Consultation</h3>
+                        <p class="text-muted" data-i18n="srv.6.d">Align your living or workspace with natural forces to attract positive energy, prosperity, and well-being.</p>
+                        <a href="#contact" class="text-accent fw-bold"><span data-i18n="srv.btn">Learn More</span> <i class="fa-solid fa-arrow-right ms-1"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Consultation Section -->
+    <section class="section-padding bg-primary-custom text-light text-center">
+        <div class="container">
+            <h2 class="mb-4" style="color: white;" data-i18n="feat.title">Looking for Personal Guidance?</h2>
+            <p class="lead mb-5 max-w-75 mx-auto" style="max-width: 700px;" data-i18n="feat.desc">Every person's journey is different. Get a personalized consultation based on your concerns and goals. Take the first step towards clarity today.</p>
+            <a href="#contact" class="btn btn-accent-custom btn-lg"><i class="fa-regular fa-calendar-check me-2"></i> <span data-i18n="feat.cta">Book Your Consultation</span></a>
+        </div>
+    </section>
+
+    <!-- Why Choose Us & How it Works -->
+    <section id="why-us" class="section-padding">
+        <div class="container">
+            <div class="row">
+                <!-- Why Choose Us -->
+                <div class="col-lg-6 mb-5 mb-lg-0 pe-lg-5">
+                    <span class="section-label" data-i18n="why.label">Why Choose Us</span>
+                    <h2 class="section-title mb-5" data-i18n="why.title">Committed to Authentic & Honest Guidance</h2>
+                    
+                    <div class="feature-box">
+                        <div class="feature-icon"><i class="fa-solid fa-award"></i></div>
+                        <div>
+                            <h4 class="mb-2" data-i18n="why.1.t">Experienced Guidance</h4>
+                            <p class="text-muted" data-i18n="why.1.d">Years of dedicated practice offering deep insights grounded in authentic astrological traditions.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="feature-box">
+                        <div class="feature-icon"><i class="fa-solid fa-user-shield"></i></div>
+                        <div>
+                            <h4 class="mb-2" data-i18n="why.2.t">Confidential Discussions</h4>
+                            <p class="text-muted" data-i18n="why.2.d">Your privacy is paramount. All consultations are held with the strictest confidentiality and respect.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="feature-box">
+                        <div class="feature-icon"><i class="fa-solid fa-gem"></i></div>
+                        <div>
+                            <h4 class="mb-2" data-i18n="why.3.t">Personalized Consultation</h4>
+                            <p class="text-muted" data-i18n="why.3.d">No generic answers. Every reading is uniquely tailored to your specific birth details and circumstances.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="feature-box">
+                        <div class="feature-icon"><i class="fa-solid fa-globe"></i></div>
+                        <div>
+                            <h4 class="mb-2" data-i18n="why.4.t">Online & In-Person</h4>
+                            <p class="text-muted" data-i18n="why.4.d">Flexible consultation modes allowing you to seek guidance from anywhere in the world.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- How It Works Timeline -->
+                <div class="col-lg-6">
+                    <div class="p-4 p-md-5 bg-light rounded shadow-sm h-100 border border-light-subtle">
+                        <span class="section-label text-center" data-i18n="how.label">Process</span>
+                        <h2 class="section-title text-center mb-5" data-i18n="how.title">How It Works</h2>
+                        
+                        <div class="timeline-steps">
+                            <div class="row">
+                                <div class="col-md-3 col-6 mb-4 mb-md-0">
+                                    <div class="step-box rounded h-100 shadow-sm border border-light-subtle">
+                                        <div class="step-number">1</div>
+                                        <h5 class="fs-6" data-i18n="how.1">Choose Service</h5>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 col-6 mb-4 mb-md-0">
+                                    <div class="step-box rounded h-100 shadow-sm border border-light-subtle">
+                                        <div class="step-number">2</div>
+                                        <h5 class="fs-6" data-i18n="how.2">Book Time</h5>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 col-6">
+                                    <div class="step-box rounded h-100 shadow-sm border border-light-subtle">
+                                        <div class="step-number">3</div>
+                                        <h5 class="fs-6" data-i18n="how.3">Discuss</h5>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 col-6">
+                                    <div class="step-box rounded h-100 shadow-sm border border-light-subtle">
+                                        <div class="step-number">4</div>
+                                        <h5 class="fs-6" data-i18n="how.4">Get Guidance</h5>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="text-center mt-4">
+                            <a href="#contact" class="btn btn-outline-custom" data-i18n="how.btn">Start Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Zodiac Visual Section -->
+    <section class="section-padding" style="background-color: #f8f6f0;">
+        <div class="container text-center">
+            <span class="section-label" data-i18n="zod.label">The Cosmos</span>
+            <h2 class="section-title text-center mb-5" data-i18n="zod.title">Wisdom of the 12 Signs</h2>
+            
+            <div class="zodiac-grid">
+                <div class="zodiac-item"><i class="fa-solid fa-moon zodiac-icon d-block"></i><strong data-i18n="z.1">Aries</strong></div>
+                <div class="zodiac-item"><i class="fa-solid fa-certificate zodiac-icon d-block"></i><strong data-i18n="z.2">Taurus</strong></div>
+                <div class="zodiac-item"><i class="fa-solid fa-venus-double zodiac-icon d-block"></i><strong data-i18n="z.3">Gemini</strong></div>
+                <div class="zodiac-item"><i class="fa-solid fa-crutch zodiac-icon d-block"></i><strong data-i18n="z.4">Cancer</strong></div>
+                <div class="zodiac-item"><i class="fa-solid fa-sun zodiac-icon d-block"></i><strong data-i18n="z.5">Leo</strong></div>
+                <div class="zodiac-item"><i class="fa-solid fa-leaf zodiac-icon d-block"></i><strong data-i18n="z.6">Virgo</strong></div>
+                <div class="zodiac-item"><i class="fa-solid fa-scale-balanced zodiac-icon d-block"></i><strong data-i18n="z.7">Libra</strong></div>
+                <div class="zodiac-item"><i class="fa-solid fa-staff-snake zodiac-icon d-block"></i><strong data-i18n="z.8">Scorpio</strong></div>
+                <div class="zodiac-item"><i class="fa-solid fa-fire zodiac-icon d-block"></i><strong data-i18n="z.9">Sagittarius</strong></div>
+                <div class="zodiac-item"><i class="fa-solid fa-mountain zodiac-icon d-block"></i><strong data-i18n="z.10">Capricorn</strong></div>
+                <div class="zodiac-item"><i class="fa-solid fa-water zodiac-icon d-block"></i><strong data-i18n="z.11">Aquarius</strong></div>
+                <div class="zodiac-item"><i class="fa-solid fa-fish zodiac-icon d-block"></i><strong data-i18n="z.12">Pisces</strong></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonial-section section-padding">
+        <div class="container">
+            <div class="text-center mb-5">
+                <span class="section-label" data-i18n="test.label">Client Stories</span>
+                <h2 class="section-title text-center" data-i18n="test.title">What People Say</h2>
+            </div>
+            
+            <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators" style="bottom: -50px;">
+                    <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                
+                <div class="carousel-inner">
+                    <!-- Testimonial 1 -->
+                    <div class="carousel-item active">
+                        <div class="row justify-content-center">
+                            <div class="col-md-8">
+                                <div class="testimonial-card">
+                                    <i class="fa-solid fa-quote-left quote-icon"></i>
+                                    <p class="fs-5 mb-4" data-i18n="test.1.t">"The guidance I received was incredibly insightful and helped me navigate a very confusing transition in my career. Highly professional and deeply understanding."</p>
+                                    <div class="stars">
+                                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                                    </div>
+                                    <h5 class="mb-0 text-white" data-i18n="test.1.n">Amit S.</h5>
+                                    <small class="text-white-50" data-i18n="test.1.s">Career Consultation</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Testimonial 2 -->
+                    <div class="carousel-item">
+                        <div class="row justify-content-center">
+                            <div class="col-md-8">
+                                <div class="testimonial-card">
+                                    <i class="fa-solid fa-quote-left quote-icon"></i>
+                                    <p class="fs-5 mb-4" data-i18n="test.2.t">"Very respectful and confidential consultation. The Kundli analysis clarified many doubts we had regarding our marriage alignment. We are very grateful."</p>
+                                    <div class="stars">
+                                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                                    </div>
+                                    <h5 class="mb-0 text-white" data-i18n="test.2.n">Priya & Rahul M.</h5>
+                                    <small class="text-white-50" data-i18n="test.2.s">Marriage Compatibility</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Testimonial 3 -->
+                    <div class="carousel-item">
+                        <div class="row justify-content-center">
+                            <div class="col-md-8">
+                                <div class="testimonial-card">
+                                    <i class="fa-solid fa-quote-left quote-icon"></i>
+                                    <p class="fs-5 mb-4" data-i18n="test.3.t">"I was impressed by the deep traditional knowledge combined with such a practical modern perspective. It brought me a lot of peace of mind."</p>
+                                    <div class="stars">
+                                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                                    </div>
+                                    <h5 class="mb-0 text-white" data-i18n="test.3.n">Neha K.</h5>
+                                    <small class="text-white-50" data-i18n="test.3.s">Personal Guidance</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="prev" style="width: 5%;">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="next" style="width: 5%;">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="section-padding">
+        <div class="container">
+            <div class="text-center mb-5">
+                <span class="section-label" data-i18n="gal.label">Gallery</span>
+                <h2 class="section-title text-center" data-i18n="gal.title">A Glimpse Into Our Environment</h2>
+            </div>
+            
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="gallery-item" data-bs-toggle="modal" data-bs-target="#imageModal" onclick="showImage('images/gallery_1.jpg')">
+                        <img src="images/gallery_1.jpg" alt="Astrology Consultation Desk" loading="lazy">
+                        <div class="gallery-overlay">
+                            <i class="fa-solid fa-magnifying-glass-plus gallery-icon"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="gallery-item" data-bs-toggle="modal" data-bs-target="#imageModal" onclick="showImage('images/gallery_2.jpg')">
+                        <img src="images/gallery_2.jpg" alt="Spiritual Books" loading="lazy">
+                        <div class="gallery-overlay">
+                            <i class="fa-solid fa-magnifying-glass-plus gallery-icon"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="gallery-item" data-bs-toggle="modal" data-bs-target="#imageModal" onclick="showImage('images/gallery_3.jpg')">
+                        <img src="images/gallery_3.jpg" alt="Traditional Setup" loading="lazy">
+                        <div class="gallery-overlay">
+                            <i class="fa-solid fa-magnifying-glass-plus gallery-icon"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modal for Gallery -->
+    <div class="modal fade" id="imageModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content bg-transparent border-0">
+                <div class="modal-header border-0">
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body text-center p-0">
+                    <img src="" id="modalImage" class="img-fluid rounded" alt="Enlarged View">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="section-padding" style="background-color: #f8f6f0;">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="text-center mb-5">
+                        <span class="section-label" data-i18n="faq.label">Questions?</span>
+                        <h2 class="section-title text-center" data-i18n="faq.title">Frequently Asked Questions</h2>
+                    </div>
+                    
+                    <div class="accordion" id="faqAccordion">
+                        <div class="accordion-item mb-3 border border-light-subtle rounded shadow-sm">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#faq1" aria-expanded="true" data-i18n="faq.1.q">
+                                    What information is required for a horoscope consultation?
+                                </button>
+                            </h2>
+                            <div id="faq1" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body text-muted" data-i18n="faq.1.a">
+                                    To create an accurate birth chart (Kundli), we require your exact Date of Birth, Time of Birth (AM/PM), and Place of Birth (City/Town).
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="accordion-item mb-3 border border-light-subtle rounded shadow-sm">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#faq2" data-i18n="faq.2.q">
+                                    Can I consult online?
+                                </button>
+                            </h2>
+                            <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body text-muted" data-i18n="faq.2.a">
+                                    Yes, we offer flexible online consultations via Phone calls, WhatsApp video, or Google Meet, allowing you to seek guidance from the comfort of your home.
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="accordion-item mb-3 border border-light-subtle rounded shadow-sm">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#faq3" data-i18n="faq.3.q">
+                                    Is my information confidential?
+                                </button>
+                            </h2>
+                            <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body text-muted" data-i18n="faq.3.a">
+                                    Absolutely. We strictly adhere to a confidentiality policy. All discussions, personal details, and astrological readings are kept entirely private.
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="accordion-item mb-3 border border-light-subtle rounded shadow-sm">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#faq4" data-i18n="faq.4.q">
+                                    How long does a consultation take?
+                                </button>
+                            </h2>
+                            <div id="faq4" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body text-muted" data-i18n="faq.4.a">
+                                    A standard personalized consultation usually takes between 30 to 45 minutes, allowing ample time to discuss your chart and address your specific concerns.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact & Booking Section -->
+    <section id="contact" class="section-padding">
+        <div class="container">
+            <div class="text-center mb-5">
+                <span class="section-label" data-i18n="cnt.label">Get in Touch</span>
+                <h2 class="section-title text-center" data-i18n="cnt.title">Book Your Astrology Consultation</h2>
+            </div>
+            
+            <div class="row g-4">
+                <div class="col-lg-7">
+                    <div class="bg-white p-4 p-md-5 rounded shadow-sm border border-light-subtle">
+                        <form id="bookingForm" onsubmit="handleFormSubmit(event)">
+                            <div class="row g-3">
+                                <div class="col-md-6">
+                                    <label class="form-label" data-i18n="cnt.f.name">Full Name</label>
+                                    <input type="text" class="form-control" required placeholder="Enter your name" data-i18n="cnt.f.name">
+                                </div>
+                                <div class="col-md-6">
+                                    <label class="form-label" data-i18n="cnt.f.phone">Phone Number</label>
+                                    <input type="tel" class="form-control" required placeholder="Enter phone number" data-i18n="cnt.f.phone">
+                                </div>
+                                <div class="col-md-6">
+                                    <label class="form-label" data-i18n="cnt.f.email">Email Address</label>
+                                    <input type="email" class="form-control" placeholder="Enter email address" data-i18n="cnt.f.email">
+                                </div>
+                                <div class="col-md-6">
+                                    <label class="form-label" data-i18n="cnt.f.srv">Preferred Service</label>
+                                    <select class="form-select">
+                                        <option selected disabled data-i18n="cnt.f.srv.def">Select a service</option>
+                                        <option data-i18n="srv.1.t">Horoscope Reading</option>
+                                        <option data-i18n="srv.2.t">Kundli Analysis</option>
+                                        <option data-i18n="srv.3.t">Marriage Compatibility</option>
+                                        <option data-i18n="srv.4.t">Career Guidance</option>
+                                        <option data-i18n="srv.6.t">Vastu Consultation</option>
+                                    </select>
+                                </div>
+                                <div class="col-12">
+                                    <label class="form-label" data-i18n="cnt.f.msg">Message / Your Concern</label>
+                                    <textarea class="form-control" rows="4" placeholder="Briefly describe your concern or birth details (Date, Time, Place of birth)" data-i18n="cnt.f.msg"></textarea>
+                                </div>
+                                <div class="col-12 mt-4">
+                                    <button type="submit" class="btn btn-primary-custom w-100" data-i18n="cnt.f.btn">Request Consultation</button>
+                                </div>
+                            </div>
+                            <div id="formSuccessMessage" class="alert alert-success mt-3 d-none">
+                                Your request has been sent successfully. We will contact you shortly to confirm the time.
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                
+                <div class="col-lg-5">
+                    <div class="contact-info-card">
+                        <h3 class="mb-4 text-light" data-i18n="cnt.info.title">Contact Information</h3>
+                        <p class="mb-4 opacity-75" data-i18n="cnt.info.desc">Reach out to us directly for immediate assistance or to schedule an appointment.</p>
+                        
+                        <div class="contact-info-item">
+                            <i class="fa-solid fa-phone"></i>
+                            <div>
+                                <h5 class="mb-1 text-light" data-i18n="cnt.info.call">Call Us</h5>
+                                <a href="tel:[PHONE_NUMBER]" class="text-white text-decoration-none">[PHONE_NUMBER]</a>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-info-item">
+                            <i class="fa-brands fa-whatsapp"></i>
+                            <div>
+                                <h5 class="mb-1 text-light" data-i18n="cnt.info.wa">WhatsApp</h5>
+                                <a href="https://wa.me/[WHATSAPP_NUMBER]" target="_blank" class="text-white text-decoration-none">[WHATSAPP_NUMBER]</a>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-info-item">
+                            <i class="fa-solid fa-envelope"></i>
+                            <div>
+                                <h5 class="mb-1 text-light" data-i18n="cnt.info.mail">Email</h5>
+                                <a href="mailto:[EMAIL_ADDRESS]" class="text-white text-decoration-none">[EMAIL_ADDRESS]</a>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-info-item">
+                            <i class="fa-solid fa-location-dot"></i>
+                            <div>
+                                <h5 class="mb-1 text-light" data-i18n="cnt.info.add">Address</h5>
+                                <span class="text-white opacity-75">[BUSINESS_ADDRESS]<br>Placeholder City, State, ZIP</span>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-info-item mt-4 border-top border-secondary pt-4">
+                            <i class="fa-solid fa-clock"></i>
+                            <div>
+                                <h5 class="mb-1 text-light" data-i18n="cnt.info.hrs">Business Hours</h5>
+                                <span class="text-white opacity-75">Monday - Saturday: 10:00 AM - 7:00 PM<br>Sunday: Closed (By Appointment Only)</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Map Placeholder -->
+            <div class="row mt-5">
+                <div class="col-12">
+                    <div class="rounded overflow-hidden shadow-sm border border-light-subtle bg-light d-flex align-items-center justify-content-center" style="height: 350px;">
+                        <div class="text-center text-muted">
+                            <i class="fa-solid fa-map-location-dot fs-1 mb-2"></i>
+                            <p class="mb-0"><strong>Google Maps Integration Placeholder</strong></p>
+                            <small>Replace this div with actual iframe embed code from Google Maps.</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Floating Action Buttons -->
+    <div class="floating-actions">
+        <a href="https://wa.me/[WHATSAPP_NUMBER]" target="_blank" class="btn-floating btn-whatsapp" aria-label="Chat on WhatsApp">
+            <i class="fa-brands fa-whatsapp"></i>
+        </a>
+        <a href="tel:[PHONE_NUMBER]" class="btn-floating btn-call" aria-label="Call Us">
+            <i class="fa-solid fa-phone"></i>
+        </a>
+    </div>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="row gy-4">
+                <div class="col-lg-4 pe-lg-5">
+                    <a href="#home" class="footer-brand text-decoration-none">
+                        <i class="fa-solid fa-dharmachakra text-accent"></i> <span data-i18n="brand.name">Joshi Madam</span>
+                    </a>
+                    <p class="opacity-75 mb-4" data-i18n="ft.desc">Dedicated to providing traditional astrological wisdom and personalized spiritual guidance to help you navigate life's journey with clarity and confidence.</p>
+                </div>
+                
+                <div class="col-lg-2 col-6">
+                    <h4 class="footer-title" data-i18n="ft.ql">Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="#home" class="text-decoration-none" data-i18n="nav.home">Home</a></li>
+                        <li><a href="#about" class="text-decoration-none" data-i18n="nav.about">About</a></li>
+                        <li><a href="#why-us" class="text-decoration-none" data-i18n="nav.whyus">Why Us</a></li>
+                        <li><a href="#testimonials" class="text-decoration-none" data-i18n="nav.testimonials">Testimonials</a></li>
+                        <li><a href="#faq" class="text-decoration-none" data-i18n="nav.faq">FAQ</a></li>
+                    </ul>
+                </div>
+                
+                <div class="col-lg-3 col-6">
+                    <h4 class="footer-title" data-i18n="ft.srv">Services</h4>
+                    <ul class="footer-links">
+                        <li><a href="#services" class="text-decoration-none" data-i18n="srv.1.t">Horoscope Reading</a></li>
+                        <li><a href="#services" class="text-decoration-none" data-i18n="srv.2.t">Kundli Analysis</a></li>
+                        <li><a href="#services" class="text-decoration-none" data-i18n="srv.3.t">Marriage & Compatibility</a></li>
+                        <li><a href="#services" class="text-decoration-none" data-i18n="srv.4.t">Career Guidance</a></li>
+                        <li><a href="#services" class="text-decoration-none" data-i18n="srv.6.t">Vastu Consultation</a></li>
+                    </ul>
+                </div>
+                
+                <div class="col-lg-3">
+                    <h4 class="footer-title" data-i18n="ft.lgl">Legal & Contact</h4>
+                    <ul class="footer-links mb-4">
+                        <li><a href="#" class="text-decoration-none" data-i18n="ft.pp">Privacy Policy</a></li>
+                        <li><a href="#" class="text-decoration-none" data-i18n="ft.tc">Terms & Conditions</a></li>
+                        <li><a href="#" class="text-decoration-none" data-i18n="ft.dis">Disclaimer</a></li>
+                    </ul>
+                    <div class="d-flex gap-3 mt-3">
+                        <a href="#" class="text-white opacity-75 text-decoration-none fs-4"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#" class="text-white opacity-75 text-decoration-none fs-4"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#" class="text-white opacity-75 text-decoration-none fs-4"><i class="fa-brands fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p class="mb-0 opacity-50" data-i18n="ft.cr">&copy; 2026 Joshi Madam Astrology. All rights reserved.</p>
+                <p class="mb-0 mt-2 opacity-50 small" data-i18n="ft.warn">Disclaimer: Astrological readings are based on traditional knowledge and meant for guidance purposes. Outcomes depend on individual karma and effort.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap 5 JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- Custom JS -->
+    <script src="js/main.js"></script>
+</body>
+</html>
