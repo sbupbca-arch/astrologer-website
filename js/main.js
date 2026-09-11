@@ -51,6 +51,52 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 
+    // 2b. Active Link Tab as Per Scroll (ScrollSpy)
+    const trackedSections = Array.from(document.querySelectorAll('header[id], section[id]'))
+        .filter(sec => document.querySelector(`.navbar-nav .nav-link[href="#${sec.id}"]`))
+        .sort((a, b) => a.offsetTop - b.offsetTop);
+        
+    const headerNavLinks = document.querySelectorAll('.navbar-nav .nav-link');
+
+    function updateActiveNavLinkOnScroll() {
+        const isNearBottom = (window.innerHeight + window.scrollY) >= (document.documentElement.scrollHeight - 60);
+
+        if (isNearBottom) {
+            headerNavLinks.forEach(link => link.classList.remove('active'));
+            const contactLink = document.querySelector('.navbar-nav .nav-link[href="#contact"]');
+            if (contactLink) contactLink.classList.add('active');
+            return;
+        }
+
+        const scrollPos = window.scrollY + 120;
+        let currentId = trackedSections.length > 0 ? trackedSections[0].id : 'home';
+
+        for (let i = 0; i < trackedSections.length; i++) {
+            const section = trackedSections[i];
+            if (scrollPos >= section.offsetTop) {
+                currentId = section.id;
+            } else {
+                break;
+            }
+        }
+
+        headerNavLinks.forEach(link => {
+            if (link.getAttribute('href') === `#${currentId}`) {
+                link.classList.add('active');
+            } else {
+                link.classList.remove('active');
+            }
+        });
+    }
+
+    window.addEventListener('scroll', updateActiveNavLinkOnScroll, { passive: true });
+    window.addEventListener('resize', () => {
+        // Recalculate section offsets on resize
+        trackedSections.sort((a, b) => a.offsetTop - b.offsetTop);
+        updateActiveNavLinkOnScroll();
+    }, { passive: true });
+    updateActiveNavLinkOnScroll();
+
     // 3. Language Selector Logic (Client-side Dictionary for Demo)
     const translations = {
         'en': {
